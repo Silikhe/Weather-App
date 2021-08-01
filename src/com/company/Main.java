@@ -1,11 +1,13 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
-    public static void main(String[] args) {
-	// write your code
-        System.out.println(" | 1  2  3  4  5  6  7  8  9");
-    }
+//    public static void main(String[] args) {
+//	// write your code
+//        System.out.println(" | 1  2  3  4  5  6  7  8  9");
+//    }
 
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
