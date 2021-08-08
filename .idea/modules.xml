@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cipher.iml" filepath="$PROJECT_DIR$/cipher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Caesar-Cipher.iml" filepath="$PROJECT_DIR$/.idea/modules/Caesar-Cipher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Caesar-Cipher.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Caesar-Cipher.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Caesar-Cipher.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Caesar-Cipher.test.iml" />
     </modules>
   </component>
 </project>
