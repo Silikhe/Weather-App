@@ -1,22 +1,18 @@
-//import java.io.Console;
-import java.*
+import java.io.Console;
+
 public class App {
-    public static <String> void main (String[] args){
+    public static void main (String[] args){
         Console newConsole = System.console();
-//      prompts User for input
 
         System.out.println("Input String:");
         String text = newConsole.readLine();
 
-//      prompts User for input
 
-        System.out.println("Encryption Key:");
+        System.out.println("Encryption Number/Key:");
         Integer key = Integer.parseInt(newConsole.readLine());
 
-//      creates new encryption object
         Encrypt newEncryption = new Encrypt(text, key);
 
-//      Checks for number digits in text to be encrypted
         if(!newEncryption.isString()){
             System.out.println("Invalid Entry");
         }
