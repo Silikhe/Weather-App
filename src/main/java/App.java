@@ -17,7 +17,6 @@ public class App {
             System.out.println("Invalid Entry");
         }
 
-//      checks to see if key is in range of 1 to 25
         if (!newEncryption.isInRange()){
             System.out.println("Key Range is between 1 and 25");
         }
