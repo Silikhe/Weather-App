@@ -1,10 +1,9 @@
 public class Decrypt {
     private int mKey;
     private String mText;
-    private final String mText1;
 
     Decrypt(String text, int key) {
-        mText1 = text;
+        this.mText = text;
         this.mKey = key;
     }
 

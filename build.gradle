@@ -1,11 +1,18 @@
 plugins {
     id 'java'
+//    id 'application'
+
 }
 
 group 'Caesar Cypher'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+
+//mainClassName 'App'
+//java {
+//    mainClassName = "App"
+//}
 
 repositories {
     mavenCentral()

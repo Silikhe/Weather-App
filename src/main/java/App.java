@@ -1,15 +1,19 @@
+import java.io.BufferedReader;
 import java.io.Console;
+import java.util.Scanner;
 
 public class App {
+    private String text;
+
     public static void main (String[] args){
-        Console newConsole = System.console();
+        Scanner newScanner = new Scanner(System.in);
 
         System.out.println("Input String:");
-        String text = newConsole.readLine();
+      String text = newScanner.nextLine();
 
 
         System.out.println("Encryption Number/Key:");
-        Integer key = Integer.parseInt(newConsole.readLine());
+        Integer key = Integer.parseInt(newScanner.nextLine());
 
         Encrypt newEncryption = new Encrypt(text, key);
 
