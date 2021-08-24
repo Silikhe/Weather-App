@@ -23,7 +23,7 @@ public class App {
 
                 System.out.println("Decryption Key:");
                 Integer key = Integer.parseInt(newScanner.nextLine());
-                newScanner.nextLine();
+//                newScanner.nextLine();
 
                 Encrypt newEncryption = new Encrypt(text, key);
                 System.out.print("Enter text to encrypt: ");
