@@ -11,21 +11,22 @@ public class App {
         boolean valid = true;
 
         while(valid){
+            System.out.print("1. Encryption\n2. Decryption\nChoose(1,2 or 3 to exit): ");
             Scanner newScanner = new Scanner(System.in);
+            int choice = newScanner.nextInt();
 
-            System.out.println("Input String:");
+            if (choice == 1){
+                System.out.println("Encryption");
+                newScanner.nextLine();
+                System.out.println("Input String Text: ");
+                String text = newScanner.nextLine();
 
-            String text = newScanner.nextLine();
-
-            System.out.println("What do you want: 1 for encript 2 for decrept /n");
-
-            Integer mykey = Integer.parseInt(newScanner.nextLine());
-
-            if (mykey == 1){
-                System.out.println("Encryption Number/Key:");
+                System.out.println("Decryption Key:");
                 Integer key = Integer.parseInt(newScanner.nextLine());
+                newScanner.nextLine();
 
                 Encrypt newEncryption = new Encrypt(text, key);
+                System.out.print("Enter text to encrypt: ");
 
                 if(!newEncryption.isString()){
                     System.out.println("Invalid Entry");
@@ -39,9 +40,13 @@ public class App {
                 String encryptedText = newEncryption.forward();
                 System.out.println(String.format("Encrypted String: %s", encryptedText));
 
-
-            } else if (mykey == 2){
-                System.out.println("Encryption Number/Key:");
+            }
+            else if (choice == 2){
+                System.out.println("Decryption");
+                newScanner.nextLine();
+                System.out.println("Input String Text: ");
+                String text = newScanner.nextLine();
+                System.out.println("Encryption Key:");
                 Integer key = Integer.parseInt(newScanner.nextLine());
 
                 Encrypt newEncryption = new Encrypt(text, key);
@@ -54,7 +59,6 @@ public class App {
                     System.out.println("Key Range is between 1 and 25");
                 }
 
-//      gives Encrypted text
                 String encryptedText = newEncryption.forward();
 
                 //        creates new decryption object
@@ -63,6 +67,16 @@ public class App {
                 //        Prints Decrypted text
                 String deryptedText = newDecryption.backward();
                 System.out.println(String.format("Decrypted String: %s", deryptedText));
+            }
+
+           else if (choice == 3){
+                System.out.println("Exit");
+                valid=false;
+           }else if (choice > 3 || choice < 3){
+                System.out.println("Choose a valid choice");
+            }
+           else {
+                System.out.println("Try again!");
             }
         }
 
