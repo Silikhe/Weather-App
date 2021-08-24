@@ -1,5 +1,22 @@
 public class Encrypt {
     private int mKey;
+
+    public int getmKey() {
+        return mKey;
+    }
+
+    public void setmKey(int mKey) {
+        this.mKey = mKey;
+    }
+
+    public String getmText() {
+        return mText;
+    }
+
+    public void setmText(String mText) {
+        this.mText = mText;
+    }
+
     private String mText;
 
     Encrypt(String text, int key) {
